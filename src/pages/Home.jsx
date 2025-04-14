@@ -1,5 +1,5 @@
 import homeImg from "@/assets/home-img.png";
-import ServiceCard from "@/components/common/serviceCard";
+import ServiceCard from "@/components/common/ServiceCard";
 import { services } from "@/constant";
 
 const Home = () => {
