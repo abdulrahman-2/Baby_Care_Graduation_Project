@@ -1,6 +1,6 @@
 import signupImg from "@/assets/signup-img.png";
 import googleIcon from "@/assets/google.svg";
-import facebookIcon from "@/assets/facebook.svg";
+import facebookIcon from "@/assets/Facebook.svg";
 import appleIcon from "@/assets/apple.svg";
 import Button from "@/components/common/Button";
 import InputFelid from "@/components/common/InputFelid";
