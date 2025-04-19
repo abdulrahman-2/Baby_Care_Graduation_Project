@@ -6,9 +6,6 @@ import { IoCameraOutline, IoVideocam } from "react-icons/io5";
 import Message from "@/components/common/message";
 import { HiOutlinePhoto } from "react-icons/hi2";
 
-
-
-
 const chats = [
   {
     name: "dr/ mohamed misbah",
@@ -73,7 +70,7 @@ const Chat = () => {
       <h1 className="text-2xl font-bold">Chat</h1>
       <div className="flex flex-col lg:flex-row gap-20 justify-between mt-10">
         <div className="flex-[2]">
-          <InputFelid label="Search" type="text" name="search" />
+          <InputFelid label="Search" type="text" name="search" placeholder="Search..." />
 
           <div className="flex justify-between items-center mt-5">
             <span className="text-lg">Active</span>

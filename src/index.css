@@ -14,3 +14,14 @@ body {
   --color-tertiary: #78b3ce;
   --color-bg: #bc9f8bcc;
 }
+
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}

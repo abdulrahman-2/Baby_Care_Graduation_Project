@@ -10,6 +10,22 @@ import EditProfile from "./pages/EditProfile";
 import Setting from "./pages/Setting";
 import Language from "./pages/Language";
 import ChangePassword from "./pages/ChangePassword";
+import Information from "./pages/Information";
+import Pregnancy from "./pages/Pregnancy";
+import Activate from "./pages/Activate";
+import Courses from "./pages/Courses";
+import Community from "./pages/Community";
+import Consultation from "./pages/Consultation";
+import HealthTracker from "./pages/HealthTracker";
+import LatestStudies from "./pages/LatestStudies";
+import Reminders from "./pages/Reminders";
+import MentalHealth from "./pages/MentalHealth";
+import Breastfeeding from "./pages/Breastfeeding";
+import Sleeping from "./pages/Sleeping";
+import Diaper from "./pages/Diaper";
+import Feeding from "./pages/Feeding";
+import Vaccinations from "./pages/Vaccinations";
+import Growth from "./pages/Growth";
 
 const App = () => {
   const location = useLocation();
@@ -30,6 +46,22 @@ const App = () => {
         <Route path="/settings" element={<Setting />} />
         <Route path="/language" element={<Language />} />
         <Route path="/changePassword" element={<ChangePassword />} />
+        <Route path="/info" element={<Information />} />
+        <Route path="/pregnancy" element={<Pregnancy />} />
+        <Route path="/activate" element={<Activate />} />
+        <Route path="/courses" element={<Courses />} />
+        <Route path="/community" element={<Community />} />
+        <Route path="/consultation" element={<Consultation />} />
+        <Route path="/health" element={<HealthTracker />} />
+        <Route path="/latest" element={<LatestStudies />} />
+        <Route path="/mental" element={<MentalHealth />} />
+        <Route path="/reminders" element={<Reminders />} />
+        <Route path="/breastfeeding" element={<Breastfeeding />} />
+        <Route path="/sleeping" element={<Sleeping />} />
+        <Route path="/diaper" element={<Diaper />} />
+        <Route path="/feeding" element={<Feeding />} />
+        <Route path="/vaccinations" element={<Vaccinations />} />
+        <Route path="/growth" element={<Growth />} />
       </Routes>
     </>
   );

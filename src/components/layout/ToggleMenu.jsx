@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 const ToggleMenu = () => {
   const [open, setOpen] = useState(false);
 
+  const user = null;
+
   const toggleMenu = () => {
     setOpen((prev) => !prev);
   };
@@ -44,6 +46,21 @@ const ToggleMenu = () => {
               {link.name}
             </Link>
           ))}
+          {user ? (
+            <Link
+              to="/profile"
+              className={`text-xl font-semibold hover:text-[#6C5C50] duration-200`}
+            >
+              Profile
+            </Link>
+          ) : (
+            <Link
+              to="/signin"
+              className={`text-xl font-semibold hover:text-[#6C5C50] duration-20`}
+            >
+              Sign In
+            </Link>
+          )}
         </div>
       </div>
     </div>
