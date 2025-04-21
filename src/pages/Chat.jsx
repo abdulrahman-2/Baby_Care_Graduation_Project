@@ -5,6 +5,9 @@ import { FaMicrophone, FaPhoneAlt } from "react-icons/fa";
 import { IoCameraOutline, IoVideocam } from "react-icons/io5";
 import Message from "@/components/common/message";
 import { HiOutlinePhoto } from "react-icons/hi2";
+import { RiSendPlaneFill } from "react-icons/ri";
+import activeImg from "../assets/active-img.png";
+import archiveImg from "../assets/archive-img.png";
 
 const chats = [
   {
@@ -66,15 +69,36 @@ const messages = [
 
 const Chat = () => {
   return (
-    <div className="py-5 px-3 lg:px-7">
-      <h1 className="text-2xl font-bold">Chat</h1>
-      <div className="flex flex-col lg:flex-row gap-20 justify-between mt-10">
+    <div className="container mx-auto py-10 px-3">
+      <div className="flex flex-col items-center lg:flex-row gap-20 justify-between">
         <div className="flex-[2]">
-          <InputFelid label="Search" type="text" name="search" placeholder="Search..." />
+          <h1 className="text-3xl font-bold mb-6">Chat</h1>
+          <div>
+            <input
+              type="text"
+              placeholder="Search..."
+              name="search"
+              className="w-full md:w-[500px] focus:outline-none rounded-2xl p-3 text-black bg-secondary"
+            />
+          </div>
 
-          <div className="flex justify-between items-center mt-5">
-            <span className="text-lg">Active</span>
-            <span className="text-lg">Archives</span>
+          <div className="flex items-center gap-20 my-10">
+            <div>
+              <span className="text-lg">Active</span>
+              <img
+                src={activeImg}
+                alt="active"
+                className="w-5 h-5 ml-2 inline-block"
+              />
+            </div>
+            <div>
+              <span className="text-lg">Archives</span>
+              <img
+                src={archiveImg}
+                alt="active"
+                className="w-5 h-5 ml-2 inline-block"
+              />
+            </div>
           </div>
 
           <div className="flex flex-col gap-5 mt-5">
@@ -85,13 +109,13 @@ const Chat = () => {
                   alt="profile"
                   className="w-12 h-12 rounded-full"
                 />
-                <span className="text-xl">{chat.name}</span>
+                <span className="text-xl font-black">{chat.name}</span>
               </div>
             ))}
           </div>
         </div>
-        <div className="flex-[3] bg-[#6c5b50] rounded-t-[50px] p-5">
-          <div>
+        <div className="flex-[3] bg-[#6c5b50] rounded-t-[50px]">
+          <div className="p-5">
             <div className="p-3 border border-secondary rounded-full flex items-center justify-between">
               <div className="flex items-center gap-4 cursor-pointer">
                 <img
@@ -114,20 +138,21 @@ const Chat = () => {
             </div>
           </div>
 
-          <div className="flex items-center gap-4 mt-10">
-            <div className="flex items-center gap-5">
+          <div className="flex items-center gap-4 mt-10 bg-white p-3">
+            <div className="flex items-center gap-5 text-black">
               <IoCameraOutline className="text-2xl" />
               <HiOutlinePhoto className="text-2xl" />
               <FaMicrophone className="text-2xl" />
             </div>
 
-            <div className="flex-1">
-              <InputFelid
+            <div className="flex-1 relative">
+              <input
                 type="text"
                 name="message"
-                className="w-full"
-                placeholder="Type your message..."
+                placeholder="Type a message..."
+                className="w-full focus:outline-none border border-black rounded-full p-3 text-black"
               />
+              <RiSendPlaneFill className="absolute top-1/2 transform -translate-y-1/2 right-5 text-3xl text-black" />
             </div>
           </div>
         </div>

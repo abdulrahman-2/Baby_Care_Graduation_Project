@@ -15,13 +15,26 @@ body {
   --color-bg: #bc9f8bcc;
 }
 
-.embla {
-  overflow: hidden;
+.swiper-button-next {
+  color: var(--color-primary) !important;
 }
-.embla__container {
-  display: flex;
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 70px !important;
+
+  @media screen and (max-width: 768px) {
+    font-size: 40px !important;
+  }
 }
-.embla__slide {
-  flex: 0 0 100%;
-  min-width: 0;
+
+.swiper-button-prev {
+  color: var(--color-primary) !important;
+}
+
+.swiper-pagination-bullet {
+  background-color: var(--color-primary) !important;
+  width: 30px !important;
+  height: 5px !important;
+  border-radius: 0 !important; 
 }

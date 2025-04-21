@@ -31,10 +31,12 @@ const informations = [
 
   {
     img: Diaper,
+    title: "Diaper",
     path: "/diaper",
   },
   {
     img: Vaccinations,
+    title: "Vaccinations",
     path: "/vaccinations",
   },
 ];
@@ -46,21 +48,21 @@ const Information = () => {
         <img src={babyImg} alt="baby" className="" />
       </div>
 
-      <div className="container mx-auto my-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-3">
+      <div className="container mx-auto my-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-3">
         {informations.map((info, index) => (
           <Link
             to={info.path}
             key={index}
-            className="relative flex flex-col items-center"
+            className="relative flex flex-col items-center shadow-lg rounded-[56px]"
           >
-            <h2 className="text-primary text-4xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center font-bold mb-4">
-              {info.title}
-            </h2>
             <img
               src={info.img}
               alt={info.title}
               className="w-full rounded-[56px]"
             />
+            <h2 className="text-black text-2xl text-center font-bold">
+              {info.title}
+            </h2>
           </Link>
         ))}
       </div>

@@ -8,6 +8,12 @@ import mentalHealth from "@/assets/mentalHealth.png";
 import reminders from "@/assets/reminders.png";
 import latestStudies from "@/assets/latestStudies.png";
 import community from "@/assets/community.png";
+import courseImg_1 from "../assets/course-Img_1.png";
+import courseImg_2 from "../assets/course-Img_2.png";
+import courseImg_3 from "../assets/course-Img_3.png";
+import doctor_1 from "../assets/doc_1.png";
+import doctor_2 from "../assets/doc_2.png";
+import doctor_3 from "../assets/doc_3.png";
 
 export const links = [
   { name: "Home", path: "/" },
@@ -368,5 +374,185 @@ export const vaccinationVideos = [
   {
     title: "BCG taste /oral polio",
     time: "3:45",
+  },
+];
+
+export const courses = [
+  {
+    title: "Sleeping position",
+    data: [
+      {
+        title: "Comprehensive Guide to Infant Nutrition",
+        img: courseImg_1,
+      },
+      {
+        title: "Sleeping position",
+        img: courseImg_2,
+      },
+      {
+        title: "Sleeping position",
+        img: courseImg_3,
+      },
+      {
+        title: "Sleeping position",
+        img: courseImg_1,
+      },
+      {
+        title: "Sleeping position",
+        img: courseImg_2,
+      },
+      {
+        title: "Sleeping position",
+        img: courseImg_3,
+      },
+      {
+        title: "Sleeping position",
+        img: courseImg_1,
+      },
+      {
+        title: "Sleeping position",
+        img: courseImg_2,
+      },
+      {
+        title: "Sleeping position",
+        img: courseImg_3,
+      },
+    ],
+  },
+  {
+    title: "Pregnancy and childbirth",
+    data: [
+      {
+        title: "Comprehensive Guide to Infant Nutrition",
+        img: courseImg_1,
+      },
+      {
+        title: "Sleeping position",
+        img: courseImg_2,
+      },
+      {
+        title: "Sleeping position",
+        img: courseImg_3,
+      },
+      {
+        title: "Sleeping position",
+        img: courseImg_1,
+      },
+      {
+        title: "Sleeping position",
+        img: courseImg_2,
+      },
+      {
+        title: "Sleeping position",
+        img: courseImg_3,
+      },
+      {
+        title: "Sleeping position",
+        img: courseImg_1,
+      },
+      {
+        title: "Sleeping position",
+        img: courseImg_2,
+      },
+      {
+        title: "Sleeping position",
+        img: courseImg_3,
+      },
+    ],
+  },
+  {
+    title: "Health, beauty, and fitness",
+    data: [
+      {
+        title: "Comprehensive Guide to Infant Nutrition",
+        img: courseImg_1,
+      },
+      {
+        title: "Sleeping position",
+        img: courseImg_2,
+      },
+      {
+        title: "Sleeping position",
+        img: courseImg_3,
+      },
+    ],
+  },
+  {
+    title: "Personal and psychological development",
+    data: [
+      {
+        title: "Comprehensive Guide to Infant Nutrition",
+        img: courseImg_1,
+      },
+      {
+        title: "Sleeping position",
+        img: courseImg_2,
+      },
+      {
+        title: "Sleeping position",
+        img: courseImg_3,
+      },
+    ],
+  },
+  {
+    title: "Pregnancy preparation",
+    data: [
+      {
+        title: "Comprehensive Guide to Infant Nutrition",
+        img: courseImg_1,
+      },
+      {
+        title: "Sleeping position",
+        img: courseImg_2,
+      },
+      {
+        title: "Sleeping position",
+        img: courseImg_3,
+      },
+    ],
+  },
+  {
+    title: "Newborn care",
+    data: [
+      {
+        title: "Comprehensive Guide to Infant Nutrition",
+        img: courseImg_1,
+      },
+      {
+        title: "Sleeping position",
+        img: courseImg_2,
+      },
+      {
+        title: "Sleeping position",
+        img: courseImg_3,
+      },
+    ],
+  },
+];
+
+export const doctorList = [
+  {
+    id: 1,
+    img: doctor_1,
+    name: "dr. alan c braveman",
+    speciality: "dental",
+    description:
+      "Doctor of Medicine Physician, Doctor, child, face, hand png thumbnail Doctor of Medicine Physician, Doctor, child",
+  },
+  {
+    id: 2,
+    img: doctor_2,
+    name: "dr. wafaa abdel aleem",
+    speciality: "brain",
+    description:
+      "Doctor of Medicine Physician, Doctor, child, face, hand png thumbnail Doctor of Medicine Physician, Doctor, child",
+  },
+  {
+    id: 3,
+    img: doctor_3,
+    name: "dr. hala al-marsafawi",
+    speciality: "heart",
+    description:
+      "Doctor of Medicine Physician, Doctor, child, face, hand png thumbnail Doctor of Medicine Physician, Doctor, child",
   },
 ];

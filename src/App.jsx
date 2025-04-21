@@ -26,6 +26,7 @@ import Diaper from "./pages/Diaper";
 import Feeding from "./pages/Feeding";
 import Vaccinations from "./pages/Vaccinations";
 import Growth from "./pages/Growth";
+import DoctorPage from "./pages/DoctorPage";
 
 const App = () => {
   const location = useLocation();
@@ -52,6 +53,7 @@ const App = () => {
         <Route path="/courses" element={<Courses />} />
         <Route path="/community" element={<Community />} />
         <Route path="/consultation" element={<Consultation />} />
+        <Route path="/doctor/:id" element={<DoctorPage />} />
         <Route path="/health" element={<HealthTracker />} />
         <Route path="/latest" element={<LatestStudies />} />
         <Route path="/mental" element={<MentalHealth />} />
