@@ -2,6 +2,7 @@ import { links } from "@/constant";
 import { useState } from "react";
 import { IoClose, IoMenu } from "react-icons/io5";
 import { Link } from "react-router-dom";
+import logo from "../../assets/logo.svg";
 
 const ToggleMenu = () => {
   const [open, setOpen] = useState(false);
@@ -26,7 +27,7 @@ const ToggleMenu = () => {
       >
         {/* Side menu with slide-in animation */}
         <div
-          className={`fixed top-0 right-0 h-screen bg-white w-[270px] p-4 rounded-l-lg shadow-lg flex flex-col items-center justify-center gap-5 transform transition-transform duration-300 ${
+          className={`fixed top-0 right-0 h-screen bg-[#bc9f8b] w-[270px] p-4 rounded-l-lg shadow-lg flex flex-col items-center justify-center gap-5 transform transition-transform duration-300 ${
             open ? "translate-x-0" : "translate-x-full"
           }`}
         >
@@ -35,6 +36,8 @@ const ToggleMenu = () => {
             className="cursor-pointer absolute top-5 left-5 text-black"
             size={35}
           />
+
+          <img src={logo} alt="logo" />
 
           {links.map((link) => (
             <Link
@@ -49,14 +52,14 @@ const ToggleMenu = () => {
           {user ? (
             <Link
               to="/profile"
-              className={`text-xl font-semibold hover:text-[#6C5C50] duration-200`}
+              className={`text-xl text-black font-semibold hover:text-[#6C5C50] duration-200`}
             >
               Profile
             </Link>
           ) : (
             <Link
               to="/signin"
-              className={`text-xl font-semibold hover:text-[#6C5C50] duration-20`}
+              className={`text-xl text-black font-semibold hover:text-[#6C5C50] duration-20`}
             >
               Sign In
             </Link>

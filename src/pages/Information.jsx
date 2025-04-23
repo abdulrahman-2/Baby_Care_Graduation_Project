@@ -53,12 +53,12 @@ const Information = () => {
           <Link
             to={info.path}
             key={index}
-            className="relative flex flex-col items-center shadow-lg rounded-[56px]"
+            className="relative flex flex-col items-center"
           >
             <img
               src={info.img}
               alt={info.title}
-              className="w-full rounded-[56px]"
+              className="w-full rounded-[56px] max-w-[400px]"
             />
             <h2 className="text-black text-2xl text-center font-bold">
               {info.title}

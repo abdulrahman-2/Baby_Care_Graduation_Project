@@ -28,7 +28,7 @@ const banners = [
 
 const Home = () => {
   return (
-    <div className="pb-10">
+    <div>
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
@@ -60,7 +60,7 @@ const Home = () => {
         ))}
       </Swiper>
 
-      <div className="container max-w-6xl px-3 mx-auto mt-36 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-20">
+      <div className="container max-w-6xl px-3 mx-auto my-36 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-20">
         {services.map((service) => (
           <ServiceCard key={service.title} service={service} />
         ))}

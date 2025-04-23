@@ -11,9 +11,9 @@ const SectionAccordion = ({ title, description, items }) => {
   return (
     <div className="px-3 max-w-4xl mx-auto text-gray-800">
       <h2 className="text-2xl font-semibold mb-2">{title}</h2>
-      <p className="mb-6 text-sm text-gray-700">{description}</p>
+      <p className="text-sm text-gray-700">{description}</p>
 
-      <div className="space-y-2">
+      <div className="space-y-3 my-10">
         {items.map((item, index) => (
           <div key={index} className="p-4 cursor-pointer">
             <button

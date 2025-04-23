@@ -14,6 +14,14 @@ import courseImg_3 from "../assets/course-Img_3.png";
 import doctor_1 from "../assets/doc_1.png";
 import doctor_2 from "../assets/doc_2.png";
 import doctor_3 from "../assets/doc_3.png";
+import suggest_1 from "../assets/suggest_1.png";
+import suggest_2 from "../assets/suggest_2.png";
+import suggest_3 from "../assets/suggest_3.png";
+import before_1 from "../assets/before_1.png";
+import before_2 from "../assets/before_2.png";
+import during_1 from "../assets/during_1.png";
+import during_2 from "../assets/during_2.png";
+import after from "../assets/after.png";
 
 export const links = [
   { name: "Home", path: "/" },
@@ -554,5 +562,147 @@ export const doctorList = [
     speciality: "heart",
     description:
       "Doctor of Medicine Physician, Doctor, child, face, hand png thumbnail Doctor of Medicine Physician, Doctor, child",
+  },
+];
+
+export const suggestions = [
+  {
+    img: suggest_1,
+    title: "Twins & Multiples",
+    description: "6,4k members + 1k posts",
+  },
+  {
+    img: suggest_2,
+    title: "Yoga & Sports",
+    description: "6,4k members + 1k posts",
+  },
+  {
+    img: suggest_3,
+    title: "Baby Names",
+    description: "6,4k members + 1k posts",
+  },
+  {
+    img: suggest_1,
+    title: "Twins & Multiples",
+    description: "6,4k members + 1k posts",
+  },
+  {
+    img: suggest_2,
+    title: "Yoga & Sports",
+    description: "6,4k members + 1k posts",
+  },
+  {
+    img: suggest_3,
+    title: "Baby Names",
+    description: "6,4k members + 1k posts",
+  },
+  {
+    img: suggest_1,
+    title: "Twins & Multiples",
+    description: "6,4k members + 1k posts",
+  },
+  {
+    img: suggest_2,
+    title: "Yoga & Sports",
+    description: "6,4k members + 1k posts",
+  },
+  {
+    img: suggest_3,
+    title: "Baby Names",
+    description: "6,4k members + 1k posts",
+  },
+  {
+    img: suggest_1,
+    title: "Twins & Multiples",
+    description: "6,4k members + 1k posts",
+  },
+  {
+    img: suggest_2,
+    title: "Yoga & Sports",
+    description: "6,4k members + 1k posts",
+  },
+  {
+    img: suggest_3,
+    title: "Baby Names",
+    description: "6,4k members + 1k posts",
+  },
+];
+
+export const beforeExercise = [
+  {
+    img: before_1,
+    title: "Cardio",
+    description: "Full body",
+  },
+  {
+    img: before_2,
+    title: "Stretching",
+    description: "Muscles of the whole body",
+  },
+  {
+    img: before_1,
+    title: "Cardio",
+    description: "Full body",
+  },
+  {
+    img: before_2,
+    title: "Stretching",
+    description: "Muscles of the whole body",
+  },
+  {
+    img: before_1,
+    title: "Cardio",
+    description: "Full body",
+  },
+  {
+    img: before_2,
+    title: "Stretching",
+    description: "Muscles of the whole body",
+  },
+  {
+    img: before_1,
+    title: "Cardio",
+    description: "Full body",
+  },
+  {
+    img: before_2,
+    title: "Stretching",
+    description: "Muscles of the whole body",
+  },
+  {
+    img: before_1,
+    title: "Cardio",
+    description: "Full body",
+  },
+  {
+    img: before_2,
+    title: "Stretching",
+    description: "Muscles of the whole body",
+  },
+];
+
+export const afterExercise = [
+  {
+    img: before_1,
+    title: "Cardio",
+    description: "Full body",
+  },
+  {
+    img: after,
+    title: "Pilates",
+    description: "Full body",
+  },
+];
+
+export const duringExercise = [
+  {
+    img: during_1,
+    title: "Body strengtheing",
+    description: "Chest, shoulders, arms",
+  },
+  {
+    img: during_2,
+    title: "Pilates",
+    description: "Full body",
   },
 ];
